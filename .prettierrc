@@ -1,0 +1,32 @@
+{
+  "printWidth": 80,
+  "tabWidth": 2,
+  "useTabs": true,
+  "semi": true,
+  "singleQuote": true,
+  "trailingComma": "none",
+  "bracketSpacing": false,
+  "jsxBracketSameLine": false,
+  "arrowParens": "avoid",
+  "parser": "babylon",
+  "overrides": [
+    {
+      "files": ["**/*.json", ".prettierrc"],
+      "options": {
+        "parser": "json"
+      }
+    },
+    {
+      "files": "src/*.css",
+      "options": {
+        "parser": "postcss"
+      }
+    },
+    {
+      "files": "**/*.md",
+      "options": {
+        "parser": "markdown"
+      }
+    }
+  ]
+}
