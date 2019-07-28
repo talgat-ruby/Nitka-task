@@ -1,25 +1,34 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
+import {connect} from 'react-redux';
 import {Layout, Input, List, Icon} from 'antd';
-
-import data from '../../data.json';
 
 import './Home.css';
 
-function Home() {
+import {getHotels} from '../../redux/reducers/hotels';
+import {hotelsList} from '../../redux/selectors/';
+
+function Home({hotels, getHotels}) {
+	const [search, setSearch] = useState('');
+
+	useEffect(() => {
+		getHotels({search});
+	}, [getHotels, search]);
+
 	return (
 		<Layout>
 			<Layout.Header>
-				<Input.Search
+				<Input
 					placeholder="Plaza or New York"
 					size="large"
-					onSearch={value => console.log(value)}
+					onChange={e => setSearch(e.target.value)}
+					value={search}
 				/>
 			</Layout.Header>
 			<Layout.Content className="Home-Content">
 				<List
 					itemLayout="vertical"
 					size="large"
-					dataSource={data}
+					dataSource={hotels}
 					renderItem={item => (
 						<List.Item
 							key={item.id}
@@ -41,4 +50,15 @@ function Home() {
 	);
 }
 
-export default Home;
+const mapStateToProps = state => ({
+	hotels: hotelsList(state)
+});
+
+const mapDispatchToProps = {
+	getHotels
+};
+
+export default connect(
+	mapStateToProps,
+	mapDispatchToProps
+)(Home);
