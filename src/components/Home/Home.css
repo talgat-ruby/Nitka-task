@@ -1,14 +1,16 @@
-.Hotel-Header {
-	display: flex;
-	align-items: center;
+.Home-Content {
+	width: 80%;
+	align-self: center;
 }
 
-.Hotel-Breadcrumb {
-	display: flex;
-	justify-content: left;
-	align-items: center;
+.Home-Item {
+	cursor: pointer;
 }
 
-.Hotel-Breadcrumb a.Hotel-Home {
-	color: white;
+.Home-Star {
+	font-size: 60px;
+}
+
+.Home-Star > span {
+	margin-left: 15px;
 }

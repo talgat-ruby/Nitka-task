@@ -32,6 +32,7 @@ function Home({hotels, getHotels, history}) {
 					renderItem={item => (
 						<List.Item
 							key={item.id}
+							className="Home-Item"
 							extra={<img width={272} alt="logo" src={item.photo} />}
 							onClick={() => history.push(`/${item.id}`)}
 						>
