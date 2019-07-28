@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/nitka-task/static/css/main.74496e4f.chunk.css",
-    "main.js": "/nitka-task/static/js/main.2f605c6f.chunk.js",
-    "main.js.map": "/nitka-task/static/js/main.2f605c6f.chunk.js.map",
-    "runtime~main.js": "/nitka-task/static/js/runtime~main.28d3fae9.js",
-    "runtime~main.js.map": "/nitka-task/static/js/runtime~main.28d3fae9.js.map",
-    "static/css/2.cb759328.chunk.css": "/nitka-task/static/css/2.cb759328.chunk.css",
-    "static/js/2.718fddba.chunk.js": "/nitka-task/static/js/2.718fddba.chunk.js",
-    "static/js/2.718fddba.chunk.js.map": "/nitka-task/static/js/2.718fddba.chunk.js.map",
-    "index.html": "/nitka-task/index.html",
-    "precache-manifest.b670cafa133193fec7ab6eebc09a4d01.js": "/nitka-task/precache-manifest.b670cafa133193fec7ab6eebc09a4d01.js",
-    "service-worker.js": "/nitka-task/service-worker.js",
-    "static/css/2.cb759328.chunk.css.map": "/nitka-task/static/css/2.cb759328.chunk.css.map",
-    "static/css/main.74496e4f.chunk.css.map": "/nitka-task/static/css/main.74496e4f.chunk.css.map"
+    "main.css": "/Nitka-task/static/css/main.74496e4f.chunk.css",
+    "main.js": "/Nitka-task/static/js/main.1ad579e6.chunk.js",
+    "main.js.map": "/Nitka-task/static/js/main.1ad579e6.chunk.js.map",
+    "runtime~main.js": "/Nitka-task/static/js/runtime~main.548985a0.js",
+    "runtime~main.js.map": "/Nitka-task/static/js/runtime~main.548985a0.js.map",
+    "static/css/2.cb759328.chunk.css": "/Nitka-task/static/css/2.cb759328.chunk.css",
+    "static/js/2.70eb4c33.chunk.js": "/Nitka-task/static/js/2.70eb4c33.chunk.js",
+    "static/js/2.70eb4c33.chunk.js.map": "/Nitka-task/static/js/2.70eb4c33.chunk.js.map",
+    "index.html": "/Nitka-task/index.html",
+    "precache-manifest.1d63b178231bb7e06ca305b16313fa74.js": "/Nitka-task/precache-manifest.1d63b178231bb7e06ca305b16313fa74.js",
+    "service-worker.js": "/Nitka-task/service-worker.js",
+    "static/css/2.cb759328.chunk.css.map": "/Nitka-task/static/css/2.cb759328.chunk.css.map",
+    "static/css/main.74496e4f.chunk.css.map": "/Nitka-task/static/css/main.74496e4f.chunk.css.map"
   }
 }
