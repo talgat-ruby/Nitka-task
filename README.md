@@ -3,3 +3,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Task for Nitka
 
 simple react & redux app
+
+Open [app](https://talgat-ruby.github.io/nitka-task)
