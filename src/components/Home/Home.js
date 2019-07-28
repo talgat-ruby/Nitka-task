@@ -7,7 +7,7 @@ import './Home.css';
 import {getHotels} from '../../redux/reducers/hotels';
 import {hotelsList} from '../../redux/selectors/';
 
-function Home({hotels, getHotels}) {
+function Home({hotels, getHotels, history}) {
 	const [search, setSearch] = useState('');
 
 	useEffect(() => {
@@ -33,11 +33,9 @@ function Home({hotels, getHotels}) {
 						<List.Item
 							key={item.id}
 							extra={<img width={272} alt="logo" src={item.photo} />}
+							onClick={() => history.push(`/${item.id}`)}
 						>
-							<List.Item.Meta
-								title={<a href={item.href}>{item.name}</a>}
-								description={item.city}
-							/>
+							<List.Item.Meta title={item.name} description={item.city} />
 							<div className="Home-Star">
 								<Icon type="star-o" />
 								<span>{item.stars}</span>
