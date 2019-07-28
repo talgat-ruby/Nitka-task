@@ -2,7 +2,7 @@ import data from '../../data.json';
 
 import {shuffle} from '../utils/';
 
-import {GET_HOTELS} from '../constants/';
+import {GET_HOTELS, SET_DATES} from '../constants/';
 
 const initialState = {
 	list: []
@@ -14,6 +14,13 @@ export default function(state = initialState, action) {
 			return {
 				...state,
 				list: action.list
+			};
+		case SET_DATES:
+			return {
+				...state,
+				list: state.list.map(v =>
+					action.id === v.id ? {...v, dates: action.dates} : v
+				)
 			};
 		default:
 			return state;
@@ -28,4 +35,10 @@ export const getHotels = ({search = ''} = {}) => ({
 				return [name, city].some(val => val.toLowerCase().includes(s));
 		  })
 		: shuffle(data).slice(0, 5)
+});
+
+export const setDates = (id, dates) => ({
+	type: SET_DATES,
+	id,
+	dates
 });
