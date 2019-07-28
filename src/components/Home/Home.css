@@ -1,0 +1,14 @@
+.Hotel-Header {
+	display: flex;
+	align-items: center;
+}
+
+.Hotel-Breadcrumb {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+
+.Hotel-Breadcrumb a.Hotel-Home {
+	color: white;
+}
