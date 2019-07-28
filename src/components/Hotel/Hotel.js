@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {Link} from 'react-router-dom';
+import {Link, Redirect} from 'react-router-dom';
 import {
 	Layout,
 	Breadcrumb,
@@ -19,8 +19,8 @@ import './Hotel.css';
 
 const DATE_FORMAT = 'YYYY-MM-DD';
 
-function Hotel({hotel = {}, setDates}) {
-	return (
+function Hotel({hotel, setDates}) {
+	return hotel ? (
 		<Layout>
 			<Layout.Header className="Hotel-Header">
 				<Breadcrumb className="Hotel-Breadcrumb">
@@ -74,6 +74,8 @@ function Hotel({hotel = {}, setDates}) {
 				</Card>
 			</Layout.Content>
 		</Layout>
+	) : (
+		<Redirect to="/no-match" />
 	);
 }
 
