@@ -1,8 +1,8 @@
 {
   "workflow": {
     "unique_name": "definition_workflow_019BRMSQPL9A64J01Qlk1EEJLppghdCSJXK",
-    "name": "Compl",
-    "title": "Compl",
+    "name": "Compl e",
+    "title": "Compl e",
     "type": "generic.workflow",
     "base_type": "workflow",
     "variables": null,
@@ -11,7 +11,7 @@
         "is_atomic": false
       },
       "delete_workflow_instance": false,
-      "display_name": "Compl",
+      "display_name": "Compl e",
       "runtime_user": {
         "override_target_runtime_user": false,
         "specify_on_workflow_start": false,
